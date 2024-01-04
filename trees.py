@@ -15,6 +15,7 @@ def height(node: Node) -> int:
 def size(node: Node) -> int:
     if node is None:
         return 0
+
     return 1 + size(node.left) + size(node.right)
 
 
