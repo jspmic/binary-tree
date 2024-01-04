@@ -41,6 +41,7 @@ def definition() -> Node:
 
 
 if __name__ == "__main__":
-    print(f"Height: {height(n1)}")
-    print(f"Size: {size(n1)}")
+    root = definition()
+    print(f"Height: {height(root)}")
+    print(f"Size: {size(root)}")
     exit(0)
