@@ -15,6 +15,7 @@ def height(node: Node) -> int:
 def size(node: Node) -> int:
     if node is None:
         return 0
+
     return 1 + size(node.left) + size(node.right)
 
 
@@ -41,6 +42,7 @@ def definition() -> Node:
 
 
 if __name__ == "__main__":
-    print(f"Height: {height(n1)}")
-    print(f"Size: {size(n1)}")
+    root = definition()
+    print(f"Height: {height(root)}")
+    print(f"Size: {size(root)}")
     exit(0)
